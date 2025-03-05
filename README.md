@@ -2,7 +2,7 @@
 This repository contains the implementation of our work, titled ["Divergence-enhanced Knowledge-guided Context Optimization for Visual-Language Prompt Tuning"](https://openreview.net/forum?id=6wOmHdwCC4&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions)). Our work has been accepted for publication in ICLR 2024.
 
 We proposed a novel and simple Divergence-enhanced Knowledge-guided Prompt Tuning (DeKg) method to address this issue. The key insight is that the bias toward pre-training can be alleviated by encouraging the independence between the learnable and the crafted prompt. Specifically, DeKg employs the Hilbert-Schmidt Independence Criterion (HSIC) to regularize the learnable prompts, thereby reducing their dependence on prior general knowledge, and enabling divergence induced by target knowledge.
-![main figure](framework.pdf)
+![main figure](framework.jpg)
 # How to Run
 
 ## GPU memory needed
