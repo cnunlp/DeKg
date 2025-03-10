@@ -54,7 +54,6 @@ bash base2new_test.sh stanford_cars
 
 When the evaluation is done, you can use `parse_test_res.py` to automatically calculate the average results.
 
-Download checkpoints [here](https://drive.google.com/file/d/17xboHHQoDUCCqItX8ghJu7lDJijDkv6Q/view?usp=drive_link).
 
 Then, to get the average performance on the base classes, run
 
