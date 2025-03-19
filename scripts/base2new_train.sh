@@ -30,7 +30,7 @@ do
         --output-dir ${DIR} \
         TRAINER.COOP.N_CTX ${NCTX} \
         TRAINER.COOP.CSC ${CSC} \
-        TRAINER.COOP.W1 ${WEIGHT1} \
+        TRAINER.COOP.W ${WEIGHT1} \
         LOSS.WEIGHT ${WEIGHT2} \
         TRAINER.COOP.CLASS_TOKEN_POSITION ${CTP} \
         DATASET.NUM_SHOTS ${SHOTS} \
