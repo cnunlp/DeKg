@@ -48,7 +48,7 @@ You will need `base2new_train_main.sh`, `base2new_test_main.sh`, and `run.sh`. T
 Below we provide an example on how to evaluate the model on ImageNet.
 
 ```bash
-bash base2new_train.sh stanford_cars 8.0 6.0
+bash base2new_train.sh stanford_cars 6.0 2.0
 bash base2new_test.sh stanford_cars 
 ```
 
