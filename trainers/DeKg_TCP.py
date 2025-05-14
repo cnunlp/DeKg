@@ -256,12 +256,12 @@ class CustomCLIP(nn.Module):
         text_features_norm = text_features / text_features.norm(dim=-1, keepdim=True)
         logits = logit_scale.detach() * image_features.detach() @ text_features_norm.t()
         
-        score_kg = self.hsic_loss(text_features,text_features_old)
+        score_kd = self.hsic_loss(text_features,text_features_old)
 
         if self.prompt_learner.training:
             score_kg = cos(text_features_norm,text_features_old)
             score_kg = 1.0-torch.mean(score_kg)
-            loss = F.cross_entropy(logits, label)+self.w1*score_kg+self.w2*score_kg
+            loss = F.cross_entropy(logits, label)+self.w1*score_kg+self.w2*score_kd
             return logits, loss
         else:
             return logits
